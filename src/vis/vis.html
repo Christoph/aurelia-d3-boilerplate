@@ -1,0 +1,11 @@
+<template>
+    <require from="./chart.css"></require>
+    <require from="../charts/bar-chart"></require>
+
+    <div class="no-selection text-center">
+        <h2>${test}</h2>
+    </div>
+    <button class="btn btn-success" click.trigger="add()">Add</button>
+
+    <bar-chart data.bind="data" mo.bind="test"></bar-chart>
+</template>
